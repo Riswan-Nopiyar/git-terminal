@@ -1,0 +1,147 @@
+git add
+Perintah git mengirim ke github target:
+-------------------------------------------------------------
+|										|
+|  git remote add origin linkGithubnya									|
+|										|
+-------------------------------------------------------------
+
+git config
+Salah satu perintah git yang paling banyak digunakan adalah git 
+config, yang bisa digunakan untuk mengatur konfigurasi tertentu 
+sesuai keinginan pengguna, seperti email, algoritma untuk diff, 
+username, format file, dll. Contohnya, perintah berikut bisa 
+digunakan untuk mengatur email:
+
+-------------------------------------------------------------
+|										|
+|  git config --global user.email sam@google.com		|
+|										|
+-------------------------------------------------------------
+
+git init
+Perintah ini digunakan untuk membuat repositori baru. Caranya:
+-------------------------------------------------------------
+|										|
+|  git init									|
+|										|
+-------------------------------------------------------------
+
+git add
+Perintah git add bisa digunakan untuk menambahkan file ke index:
+-------------------------------------------------------------
+|										|
+|  git add .								|
+|										|
+-------------------------------------------------------------
+
+git clone
+Perintah git clone digunakan untuk checkout repositori. Jia 
+repositori berada di remove server, gunakan:
+-------------------------------------------------------------
+|										|
+|  git clone 								|
+|										|
+-------------------------------------------------------------
+
+git commit
+Perintah git commit digunakan untuk melakukan commit pada 
+perubahan ke head. Ingat bahwa perubahan apapun yang di-commit 
+tidak akan langsung ke remote repository. Gunakan:
+-------------------------------------------------------------
+|										|
+|  git commit -m "isi"							|
+|										|
+-------------------------------------------------------------
+
+git status
+Perintah git status menampilkan daftar file yang berubah bersama 
+dengan file yang ingin di tambahkan atau di-commit. Gunakan:
+-------------------------------------------------------------
+|										|
+|  git status								|
+|										|
+-------------------------------------------------------------
+
+git push
+git push adalah perintah git dasar lainnya. Push akan mengirimkan 
+perubahan ke master branch dari remote repository yang berhubungan 
+dengan direktori kerja Anda. Misalnya:
+-------------------------------------------------------------
+|										|
+|  git push origin master  atau  git push -f origin master	|
+|  										|
+|		atau								|
+|										|
+|  git push origin main	 						|
+|										|
+-------------------------------------------------------------
+
+git checkout
+Perintah git checkout bisa digunakan untuk membuat branch atau 
+untuk berpindah diantaranya. Misalnya, perintah berikut ini akan 
+membuat branch baru dan berpindah ke dalamnya:
+-------------------------------------------------------------
+|										|
+|  git checkout namabranch						|
+|										|
+-------------------------------------------------------------
+
+Untuk berpindah dari branch satu ke lainnya, gunakan:
+-------------------------------------------------------------
+|										|
+|  git checkout <branch-name>						|
+|										|
+-------------------------------------------------------------
+
+menambah branch:
+-------------------------------------------------------------
+|										|
+|  git branch namaBranch						|
+|										|
+-------------------------------------------------------------
+
+Untuk mengetahui URL target github:
+-------------------------------------------------------------
+|										|
+|  git remote get-url origin						|
+|										|
+-------------------------------------------------------------
+
+Untuk mengganti branch master:
+-------------------------------------------------------------
+|										|
+|  git push origin master:namabaru					|
+|										|
+-------------------------------------------------------------
+
+Mengirim semua perubahan ke semua branch:
+-------------------------------------------------------------
+|										|
+|  git push origin --all						|
+|										|
+-------------------------------------------------------------
+
+menghapus branch
+-------------------------------------------------------------
+|										|
+|  git push --delete origin namaBranchnya				|
+|										|
+-------------------------------------------------------------
+
+
+echo "# SIG-bengkel-gambut" >> README.md
+git init
+git add .
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Riswan-Nopiyar/SIG-bengkel-gambut.git
+git push -u origin main
+git push -f origin master
+
+
+
+
+git branch feature
+git branch --delete feature
