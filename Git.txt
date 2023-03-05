@@ -1,9 +1,9 @@
 git add
 Perintah git mengirim ke github target:
 -------------------------------------------------------------
-|										|
-|  git remote add origin linkGithubnya									|
-|										|
+|											                                      |
+|  git remote add origin linkGithubnya									    |
+|										                                        |
 -------------------------------------------------------------
 
 git config
@@ -14,9 +14,9 @@ username, format file, dll. Contohnya, perintah berikut bisa
 digunakan untuk mengatur email:
 
 -------------------------------------------------------------
-|										|
-|  git config --global user.email sam@google.com		|
-|										|
+|											                                        |
+|  git config --global user.email sam@google.com		          |
+|											                                        |
 -------------------------------------------------------------
 
 git init
